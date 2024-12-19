@@ -11,6 +11,7 @@ export default {
       colors: {
         purple: '#9d67f8',
         'light-purple': '#d7cbff',
+        'nav-bg':'#232233'
       },
       lineHeight: {
         'extra-loose': '2.5',
