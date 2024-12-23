@@ -65,8 +65,8 @@ const stacksData = [
     tags: ['SPA', 'SSR'],
     dependencies: ['Webpack', 'Babel'],
     ecosystem: ['Redux', 'React Router'],
-    logo_url: 'https://reactjs.org/logo-og.png',
-    is_mastered: false,
+    logo_url: 'https://cdn.worldvectorlogo.com/logos/react-2.svg',
+    is_mastered: true,
   },
   {
     id: 2,
@@ -126,7 +126,7 @@ const stacksData = [
     dependencies: ['Vite', 'Rollup'],
     ecosystem: [],
     logo_url: 'https://svelte.dev/svelte-logo.svg',
-    is_mastered: false,
+    is_mastered: true,
   },
   {
     id: 5,
@@ -206,7 +206,7 @@ const stacksData = [
     dependencies: ['NPM'],
     ecosystem: ['Express.js', 'Koa'],
     logo_url: 'https://nodejs.org/static/images/logo.svg',
-    is_mastered: false,
+    is_mastered: true,
   },
   {
     id: 9,
