@@ -6,7 +6,7 @@
   import gradiantEllipse from '@assets/gradiantEllipse.svg';
 </script>
 
-<div class="w-80 h-84 relative flex items-center justify-center">
+<div class="w-80 h-84 relative flex items-center justify-center mb-12 lg:mb-0">
   <img class="absolute z-0" alt="Logo du site" src={lines} />
   <img
     class="absolute z-10 bottom-3 right-1"

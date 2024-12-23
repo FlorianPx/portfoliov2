@@ -2,7 +2,9 @@
   import AnimateLogo from '../lib/components/AnimateLogo.svelte';
 </script>
 
-<div class="flex items-center space-x-12 my-auto">
+<div
+  class="flex flex-col-reverse lg:flex-row items-center justify-center lg:space-x-12"
+>
   <div class="max-w-2xl space-y-4">
     <div class="flex items-center space-x-2">
       <span class="w-16 h-1 bg-purple"></span>
