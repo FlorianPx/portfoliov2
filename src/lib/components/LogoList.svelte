@@ -1,4 +1,6 @@
 <script lang="ts">
+  import SkillsTooltip from './SkillsTooltip.svelte';
+
   let { query } = $props();
 </script>
 
@@ -8,16 +10,10 @@
   {:else if $query.isError}
     <p>Error: {$query.error.message}</p>
   {:else if $query.isSuccess}
-    <ul class="w-full flex flex-row space-x-4">
+    <ul class="w-full flex flex-row">
       {#each $query.data as stack}
         <li class="w-fit">
-          <img
-            src={stack.logo_url}
-            alt={`Logo ${stack.name}`}
-            class="w-fit h-6"
-            title={stack.name}
-            loading="lazy"
-          />
+          <SkillsTooltip skill={stack} />
         </li>
       {/each}
     </ul>
