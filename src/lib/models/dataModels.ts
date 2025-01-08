@@ -20,7 +20,7 @@ type Project = {
   date_fin: string;
 };
 
-type Tool = {
+export type Tool = {
   id: number;
   name: string;
   type: string;
@@ -40,7 +40,7 @@ type Tool = {
   logo_url: string;
 };
 
-type Stack = Tool & {
+export type Stack = Tool & {
   is_mastered: boolean;
 };
 
