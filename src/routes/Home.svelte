@@ -3,12 +3,20 @@
   import AnimateLogo from '@components/AnimateLogo.svelte';
   import LogoListe from '@lib/components/LogoList.svelte';
   import type { Stacks } from '@lib/models/dataModels';
-  import { fetchData } from '@lib/mocks/api';
+  import { supabase } from '@lib/supabase/supabaseClient';
+
+  const fetchData = async () => {
+    const { data } = await supabase
+      .from(import.meta.env.VITE_TABLE_STACKS)
+      .select()
+      .eq('is_mastered', 1);
+    return data || [];
+  };
 
   const query: CreateQueryResult<Stacks, Error> = createQuery({
     queryKey: ['fetch_stacks'],
     queryFn: () =>
-      fetchData('stacks').then((values) =>
+      fetchData().then((values) =>
         (values as Stacks).filter((value) => value.is_mastered),
       ),
     enabled: true,
@@ -16,7 +24,7 @@
 </script>
 
 <div
-  class="flex flex-col-reverse lg:flex-row items-center justify-center lg:space-x-16"
+  class="flex flex-col-reverse lg:flex-row items-center justify-center lg:space-x-16 xl:space-x-32"
 >
   <div class="max-w-2xl space-y-4">
     <div class="flex items-center space-x-2">
