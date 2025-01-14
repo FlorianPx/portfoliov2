@@ -19,11 +19,11 @@
       fetchData().then((values) =>
         (values as Stacks).filter((value) => value.is_mastered),
       ),
-    enabled: true,
+    enabled: false,
   });
 </script>
 
-<div
+<section
   class="flex flex-col-reverse lg:flex-row items-center justify-center lg:space-x-16 xl:space-x-32"
 >
   <div class="max-w-2xl space-y-4">
@@ -31,18 +31,17 @@
       <span class="w-16 h-1 bg-purple"></span>
       <p class="text-base text-purple font-semibold uppercase">Florian Poux</p>
     </div>
-    <p class="text-4xl font-normal leading-12 m-0 font-recoleta">
+    <h1 class="text-4xl font-normal leading-12 m-0 font-recoleta">
       Je suis développeur front-end.
-    </p>
+    </h1>
     <div class="flex flex-col text-lg text-light-purple">
       <p>Bienvenue sur mon portfolio !</p>
       <p class="text-justify max-w-xl">
-        Vous y découvrirez mes skills, des projets réalisés seul ou en équipe,
-        ainsi que mon CV pour mieux me connaître.
+        Vous y découvrirez mes skills, des projets, ainsi que mon CV afin de
+        mieux me connaître. Bonne visite !
       </p>
-      <p>Bonne visite !</p>
     </div>
     <LogoListe {query} />
   </div>
   <AnimateLogo />
-</div>
+</section>
