@@ -1,8 +1,13 @@
 :root {
-  font-family: Inter, Arial, sans-serif;
-  color: #ffffffde;
-  background-color: #1F1A30;
+  --color-white:#ffffffde;
+  --color-background:hsl(256 100% 7.3%);
+}
 
+body {
+  font-family: Inter, Arial, sans-serif;
+  color: var(--color-white);
+  background: var(--color-background); 
+  
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
