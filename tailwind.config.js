@@ -8,6 +8,9 @@ export default {
         "88":"22rem",
         "92":"23rem"
       },
+      maxWidth:{
+        "4.5xl":"60rem"
+      },
       colors: {
         purple: '#9d67f8',
         'light-purple': '#d7cbff',
